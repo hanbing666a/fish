@@ -1,0 +1,33 @@
+-- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (0.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/shb/chapt6/chapt6_ws/build/fishbot_description
+-- Install configuration: ""
+-- Installing: /home/shb/chapt6/chapt6_ws/install/fishbot_description/share/fishbot_description/launch
+-- Installing: /home/shb/chapt6/chapt6_ws/install/fishbot_description/share/fishbot_description/launch/display_robot.launch.py
+-- Installing: /home/shb/chapt6/chapt6_ws/install/fishbot_description/share/fishbot_description/urdf
+-- Installing: /home/shb/chapt6/chapt6_ws/install/fishbot_description/share/fishbot_description/urdf/first_robot.urdf
+-- Installing: /home/shb/chapt6/chapt6_ws/install/fishbot_description/share/fishbot_description/urdf/first_robot.pdf
+-- Installing: /home/shb/chapt6/chapt6_ws/install/fishbot_description/share/fishbot_description/urdf/first_robot.gv
+-- Installing: /home/shb/chapt6/chapt6_ws/install/fishbot_description/share/ament_index/resource_index/package_run_dependencies/fishbot_description
+-- Installing: /home/shb/chapt6/chapt6_ws/install/fishbot_description/share/ament_index/resource_index/parent_prefix_path/fishbot_description
+-- Installing: /home/shb/chapt6/chapt6_ws/install/fishbot_description/share/fishbot_description/environment/ament_prefix_path.sh
+-- Installing: /home/shb/chapt6/chapt6_ws/install/fishbot_description/share/fishbot_description/environment/ament_prefix_path.dsv
+-- Installing: /home/shb/chapt6/chapt6_ws/install/fishbot_description/share/fishbot_description/environment/path.sh
+-- Installing: /home/shb/chapt6/chapt6_ws/install/fishbot_description/share/fishbot_description/environment/path.dsv
+-- Installing: /home/shb/chapt6/chapt6_ws/install/fishbot_description/share/fishbot_description/local_setup.bash
+-- Installing: /home/shb/chapt6/chapt6_ws/install/fishbot_description/share/fishbot_description/local_setup.sh
+-- Installing: /home/shb/chapt6/chapt6_ws/install/fishbot_description/share/fishbot_description/local_setup.zsh
+-- Installing: /home/shb/chapt6/chapt6_ws/install/fishbot_description/share/fishbot_description/local_setup.dsv
+-- Installing: /home/shb/chapt6/chapt6_ws/install/fishbot_description/share/fishbot_description/package.dsv
+-- Installing: /home/shb/chapt6/chapt6_ws/install/fishbot_description/share/ament_index/resource_index/packages/fishbot_description
+-- Installing: /home/shb/chapt6/chapt6_ws/install/fishbot_description/share/fishbot_description/cmake/fishbot_descriptionConfig.cmake
+-- Installing: /home/shb/chapt6/chapt6_ws/install/fishbot_description/share/fishbot_description/cmake/fishbot_descriptionConfig-version.cmake
+-- Installing: /home/shb/chapt6/chapt6_ws/install/fishbot_description/share/fishbot_description/package.xml

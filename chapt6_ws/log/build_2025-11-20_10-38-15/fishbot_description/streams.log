@@ -1,0 +1,19 @@
+[0.006s] Invoking command in '/home/shb/chapt6/chapt6_ws/build/fishbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/shb/chapt6/chapt6_ws/src/fishbot_description -DCMAKE_INSTALL_PREFIX=/home/shb/chapt6/chapt6_ws/install/fishbot_description
+[0.061s] -- The C compiler identification is GNU 13.3.0
+[0.103s] -- The CXX compiler identification is GNU 13.3.0
+[0.119s] -- Detecting C compiler ABI info
+[0.192s] -- Detecting C compiler ABI info - done
+[0.199s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.200s] -- Detecting C compile features
+[0.200s] -- Detecting C compile features - done
+[0.208s] -- Detecting CXX compiler ABI info
+[0.293s] -- Detecting CXX compiler ABI info - done
+[0.301s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.301s] -- Detecting CXX compile features
+[0.302s] -- Detecting CXX compile features - done
+[0.302s] [31mCMake Error at CMakeLists.txt:28 (ament_package):
+[0.302s]   Unknown CMake command "ament_package".
+[0.302s] 
+[0.302s] [0m
+[0.302s] -- Configuring incomplete, errors occurred!
+[0.305s] Invoked command in '/home/shb/chapt6/chapt6_ws/build/fishbot_description' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/shb/chapt6/chapt6_ws/src/fishbot_description -DCMAKE_INSTALL_PREFIX=/home/shb/chapt6/chapt6_ws/install/fishbot_description

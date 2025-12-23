@@ -1,0 +1,7 @@
+[0.006s] Invoking command in '/home/shb/chapt6/chapt6_ws/build/fishbot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/shb/chapt6/chapt6_ws/src/fishbot_description -DCMAKE_INSTALL_PREFIX=/home/shb/chapt6/chapt6_ws/install/fishbot_description
+[0.022s] [31mCMake Error at CMakeLists.txt:28 (ament_package):
+[0.022s]   Unknown CMake command "ament_package".
+[0.022s] 
+[0.023s] [0m
+[0.023s] -- Configuring incomplete, errors occurred!
+[0.024s] Invoked command in '/home/shb/chapt6/chapt6_ws/build/fishbot_description' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/shb/chapt6/chapt6_ws/src/fishbot_description -DCMAKE_INSTALL_PREFIX=/home/shb/chapt6/chapt6_ws/install/fishbot_description
