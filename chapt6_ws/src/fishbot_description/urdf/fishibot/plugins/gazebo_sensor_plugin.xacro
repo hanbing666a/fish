@@ -2,28 +2,60 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
     <xacro:macro name="gazebo_sensor_plugin">
         <gazebo reference="laser_link">
-            <sensor name="gpu_lidar" type="gpu_lidar">
+            <sensor name="gpu_lidar" type="gpu_ray">
+                <!-- 注意：type应该是 gpu_ray 而不是 gpu_lidar -->
+                <pose>0 0 0 0 0 0</pose>
                 <topic>lidar</topic>
                 <update_rate>10</update_rate>
-                <lidar>
-                    <!-- 设置扫描范围 -->
+                <frame_id>laser_link</frame_id>
+                <ray>
                     <scan>
-                        <!-- 描述水平扫描范围 描述雷达扫描一圈的采样光束数量 分辨率和samples一起决定实际采样点数量
-                        起始扫描角度 终止扫描角度 vertical 描述竖直扫描范围，字段同horizontal -->
                         <horizontal>
                             <samples>360</samples>
-                            <resolution>1.000000</resolution>
-                            <min_angle>0.000000</min_angle>
-                            <max_angle>6.283100</max_angle>
+                            <resolution>1.0</resolution>
+                            <min_angle>0.0</min_angle>
+                            <max_angle>6.28319</max_angle> <!-- 360度 -->
                         </horizontal>
+                        <vertical>
+                            <samples>1</samples>
+                            <resolution>1.0</resolution>
+                            <min_angle>0.0</min_angle>
+                            <max_angle>0.0</max_angle>
+                        </vertical>
                     </scan>
-                    <!-- 设置扫描距离 -->
                     <range>
-                        <min>0.080000</min>
+                        <min>0.08</min>
                         <max>10.0</max>
-                        <resolution>0.010000</resolution>
+                        <resolution>0.01</resolution>
                     </range>
-                </lidar>
+                    <noise>
+                        <type>gaussian</type>
+                        <mean>0.0</mean>
+                        <stddev>0.01</stddev>
+                    </noise>
+                </ray>
+                <!-- ros-jazzy-ros-gz -->
+                <!-- 当前插件可以在gazebo中使用lidar并且跟随车顶显示 -->
+                <!-- 存在的问题是 ros_gz_bridge——即当前使用的桥接方式官方并没有给出重命名frame_id的方式，现象就是ros2接收到的topic的frame_id定义的是和gazebo一样的 并不是laser_link -->
+                <plugin name="gz_lidar_ros_plugin" filename="libgazebo_ros_ray_sensor.so">
+                    <ros>
+                        <!-- 设置命名空间，可选 -->
+                        <namespace>/</namespace>
+                        <!-- 重映射，确保发布到 /scan 话题 -->
+                        <remapping>~/out:=scan</remapping>
+                    </ros>
+                    <!-- 明确输出为 LaserScan 类型 -->
+                    <output_type>sensor_msgs/LaserScan</output_type>
+                    <!-- 关键：在这里直接设置 frame_id -->
+                    <frame_name>laser_link</frame_name>
+                    <!-- 如果激光雷达原始数据有噪音，可以设置最小强度过滤，可选 -->
+                    <!-- <min_intensity>0.01</min_intensity> -->
+                    <!-- 如果你希望同时发布点云，可以配置另一个输出，可选 -->
+                    <!-- <output_type>sensor_msgs/PointCloud2</output_type> -->
+                    <!-- <frame_name>laser_link</frame_name> -->
+                    <!-- <topic>points</topic> -->
+                </plugin>
+                <always_on>true</always_on>
                 <visualize>true</visualize>
             </sensor>
         </gazebo>

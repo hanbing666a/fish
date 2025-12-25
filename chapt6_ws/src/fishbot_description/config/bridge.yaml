@@ -8,11 +8,13 @@
   ros_type_name: "geometry_msgs/msg/Twist"
   gz_type_name: "gz.msgs.Twist"
 
-- ros_topic_name: "scan"
-  gz_topic_name: "/lidar"
-  ros_type_name: "sensor_msgs/msg/LaserScan"
-  gz_type_name: "gz.msgs.LaserScan"
-  direction: "GZ_TO_ROS"
+# - ros_topic_name: "/scan"
+#   gz_topic_name: "/lidar"
+#   ros_type_name: "sensor_msgs/msg/LaserScan"
+#   gz_type_name: "gz.msgs.LaserScan"
+#   direction: "GZ_TO_ROS"
+#   ros_parameters:
+#   frame_id: laser_link # 直接将frame_id重命名为laser_link
 
 
 - ros_topic_name: "points"

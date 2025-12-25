@@ -106,7 +106,6 @@ def generate_launch_description():
        config_file=LaunchConfiguration('config_file'),
     )
 
-
     
     return launch.LaunchDescription([
         action_declare_arg_mode_path,
